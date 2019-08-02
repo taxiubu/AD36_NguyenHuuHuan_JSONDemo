@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@color/colorBlueDark"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="50dp"
+            android:id="@+id/tvLocated"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:id="@+id/tvTime"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_wb_cloudy_white_24dp"
+                    android:id="@+id/imIcon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:id="@+id/tvTemp"
+                android:textSize="40dp"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:id="@+id/tvWeather"
+            android:gravity="center"
+            android:text="co may"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/colorBlueLight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</LinearLayout>
